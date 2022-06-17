@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:fall_damage",
+    "display": {
+        "title": {
+            "text": "Urwane skrzydła"
+        },
+        "description": {
+            "text": "Zgiń od upadku z wysokości mając założoną elytrę"
+        },
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "false_wings": {
+            "trigger" : "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

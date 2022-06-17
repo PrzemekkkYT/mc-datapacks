@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:one_punch",
+    "display": {
+        "title": {
+            "text": "Multi kill"
+        },
+        "description": {
+            "text": "Zabij 5 mobów na raz"
+        },
+        "icon": {
+            "item": "minecraft:netherite_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "kill": {
+            "trigger" : "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

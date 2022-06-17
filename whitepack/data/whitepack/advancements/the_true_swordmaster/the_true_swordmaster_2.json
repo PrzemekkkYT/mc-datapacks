@@ -1,0 +1,39 @@
+{
+    "parent": "whitepack:the_true_swordmaster/the_true_swordmaster",
+    "display": {
+        "title": {
+            "text": "The True Swordmaster 2"
+        },
+        "description": {
+            "text": "Zabij łącznie 5000 mobów"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "mob_kills": {
+                                "min": 5000
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

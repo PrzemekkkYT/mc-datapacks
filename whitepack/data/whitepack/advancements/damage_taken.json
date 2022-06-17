@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:multi_kill",
+    "display": {
+        "title": {
+            "text": "Stoi szybciej niż oni biegają"
+        },
+        "description": {
+            "text": "Otrzymaj łącznie 300 obrażeń w 10 sekund"
+        },
+        "icon": {
+            "item": "minecraft:shield"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "damage_taken": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

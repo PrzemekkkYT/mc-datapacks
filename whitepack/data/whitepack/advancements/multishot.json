@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:great_orcus_labyrinth",
+    "display": {
+        "title": {
+            "text": "Multishot"
+        },
+        "description": {
+            "text": "Zabij 3 moby strzałami z wielostrzału z kuszy"
+        },
+        "icon": {
+            "item": "minecraft:crossbow"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "crossbow": {
+            "trigger" : "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

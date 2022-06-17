@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:yellow_submarine",
+    "display": {
+        "title": {
+            "text": "Potrójny pech"
+        },
+        "description": {
+            "text": "Zabij 100 utopców i nie otrzymaj trójzębu"
+        },
+        "icon": {
+            "item": "minecraft:trident"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "crossbow": {
+            "trigger" : "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

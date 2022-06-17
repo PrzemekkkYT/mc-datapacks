@@ -1,0 +1,33 @@
+{
+    "parent": "whitepack:kirito_swords",
+    "display": {
+        "title": {
+            "text": "One Punch"
+        },
+        "description": {
+            "text": "Zabij moba na jedno uderzenie"
+        },
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "one_punch": {
+          "trigger": "minecraft:player_hurt_entity",
+          "conditions": {
+            "damage": {
+              "dealt": {
+                "min": 20
+              }
+            }
+          }
+        }
+      },
+      "rewards": {
+        "experience": 100
+      }
+}

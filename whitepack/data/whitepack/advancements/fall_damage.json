@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:root",
+    "display": {
+        "title": {
+            "text": "Nieudane wiadro"
+        },
+        "description": {
+            "text": "Zgiń od upadku z wysokości"
+        },
+        "icon": {
+            "item": "minecraft:netherite_boots"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "fall_damage": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

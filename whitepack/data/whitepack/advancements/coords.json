@@ -1,0 +1,42 @@
+{
+    "parent": "whitepack:root",
+    "display": {
+        "title": {
+            "text": "Koordy sigmy"
+        },
+        "description": {
+            "text": "Stań na koordynatach 420, 69, 1337"
+        },
+        "icon": {
+            "item": "minecraft:leather_boots"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "position": {
+                    "x": {
+                        "min": 420,
+                        "max": 421
+                    },
+                    "y": {
+                        "min": 69,
+                        "max": 70
+                    },
+                    "z": {
+                        "min": 1337,
+                        "max": 1338
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}

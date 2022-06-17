@@ -1,0 +1,26 @@
+{
+    "parent": "whitepack:bed_on_mountain",
+    "display": {
+        "title": {
+            "text": "Łózia"
+        },
+        "description": {
+            "text": "Zbierz łącznie 100 łózek"
+        },
+        "icon": {
+            "item": "minecraft:red_bed"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "beds": {
+            "trigger" : "minecraft:impossible"
+        }
+    },
+    "rewards": {
+      "experience": 100
+    }
+}
