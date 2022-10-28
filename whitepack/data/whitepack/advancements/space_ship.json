@@ -19,10 +19,12 @@
         "space": {
             "trigger": "minecraft:location",
             "conditions": {
-                "location": {
-                    "position": {
-                        "y": {
-                            "min": 3000
+                "player": {
+                    "location": {
+                        "position": {
+                            "y": {
+                                "min": 3000
+                            }
                         }
                     }
                 }

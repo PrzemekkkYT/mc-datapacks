@@ -19,13 +19,15 @@
         "ceiling": {
             "trigger": "minecraft:location",
             "conditions": {
-                "location": {
-                    "position": {
-                        "y": {
-                            "min": 127
-                        }
-                    },
-                    "dimension": "minecraft:the_nether"
+                "player": {
+                    "location": {
+                        "position": {
+                            "y": {
+                                "min": 127
+                            }
+                        },
+                        "dimension": "minecraft:the_nether"
+                    }
                 }
             }
         }

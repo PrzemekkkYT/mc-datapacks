@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 8,
-		"description": "Custom datapack with functions and advancements"
+		"pack_format": 10,
+		"description": "Custom datapack with functions and advancements.\nVersion: 1.0"
 	}
 }

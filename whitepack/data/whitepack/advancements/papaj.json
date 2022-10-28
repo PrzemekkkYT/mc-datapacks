@@ -19,10 +19,14 @@
         "x": {
             "trigger": "minecraft:location",
             "conditions": {
-                "position": {
-                    "x": {
-                        "min": 2137,
-                        "max": 2138
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 2137,
+                                "max": 2138
+                            }
+                        }
                     }
                 }
             }
@@ -30,10 +34,14 @@
         "y": {
             "trigger": "minecraft:location",
             "conditions": {
-                "position": {
-                    "y": {
-                        "min": 2137,
-                        "max": 2138
+                "player": {
+                    "location": {
+                        "position": {
+                            "y": {
+                                "min": 2137,
+                                "max": 2138
+                            }
+                        }
                     }
                 }
             }
@@ -41,10 +49,14 @@
         "z": {
             "trigger": "minecraft:location",
             "conditions": {
-                "position": {
-                    "z": {
-                        "min": 2137,
-                        "max": 2138
+                "player": {
+                    "location": {
+                        "position": {
+                            "z": {
+                                "min": 2137,
+                                "max": 2138
+                            }
+                        }
                     }
                 }
             }
