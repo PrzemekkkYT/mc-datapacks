@@ -5,7 +5,7 @@ My own custom datapacks for single/multiplayer
 # coronapack
 I've made this datapack during pandemic for server that me and my friends were playing on.
 Features:
-  1.No need for everyone to sleep at the same time to skip night, only one person is needed
+  1. No need for everyone to sleep at the same time to skip night, only one person is needed
   2. You can name armor stand "rece" and it will have arms
   3. Some new recipes for stonecutter
   
