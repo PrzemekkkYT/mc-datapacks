@@ -1,0 +1,2 @@
+tellraw @a {"text":"","extra":[{"selector":"@s","color":"dark_green","bold":true},{"text":" nie chce, żeby ktoś spał!","color":"blue","bold":true}]}
+execute as @a[scores={sleep=1..}] at @s run tp ~ ~ ~

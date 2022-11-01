@@ -1,0 +1,36 @@
+{
+    "parent": "whitepack:main/beds/bed_on_mountain",
+    "display": {
+        "title": {
+            "text": "Łóżkowy król"
+        },
+        "description": {
+            "text": "Trzymaj łącznie 37 łóżek w ekwipunku"
+        },
+        "icon": {
+            "item": "minecraft:yellow_bed"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "beds": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "slots": {
+                    "full": 37
+                  },
+                "items": [
+                    {
+                        "tag": "minecraft:beds"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    }
+}

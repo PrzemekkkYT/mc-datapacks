@@ -1,0 +1,1 @@
+scoreboard players set @a drowned_deaths 0

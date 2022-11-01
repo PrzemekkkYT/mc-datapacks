@@ -1,0 +1,39 @@
+{
+    "parent": "whitepack:milestones/total_distance/total_distance_5",
+    "display": {
+        "title": {
+            "text": "Podróżnik 6"
+        },
+        "description": {
+            "text": "Pokonaj łącznie 50'000 kilometrów"
+        },
+        "icon": {
+            "item": "minecraft:netherite_boots"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "total_distance": {
+                                "min": 5000000000
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+      "experience": 5000
+    }
+}

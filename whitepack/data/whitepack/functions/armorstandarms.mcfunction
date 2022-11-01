@@ -1,6 +1,5 @@
-execute as @e[type=minecraft:armor_stand,name=rece] run data merge entity @s {ShowArms:1b,Tags:["rece"]}
-execute as @a[tag=as,tag=near] at @s unless entity @e[type=minecraft:armor_stand,name=rece,tag=rece,distance=..7] run give @s minecraft:name_tag{display:{Name:"{\"text\":\"rece\"}"}}
-tag @a remove as
-tag @a remove near
-execute as @a at @s if entity @e[type=minecraft:armor_stand,name=rece,tag=rece,distance=..6] run tag @s add as
-execute as @e[type=minecraft:armor_stand,name=rece,tag=rece] at @s run tag @a[tag=as,sort=nearest,limit=1] add near
+execute as @e[type=minecraft:area_effect_cloud,tag=wp_arms_cloud] at @s run tp @s @e[limit=1,type=armor_stand,tag=wp_arms,distance=0...3]
+execute as @e[type=minecraft:armor_stand,name="arms",nbt={OnGround:1b}] run data merge entity @s {ShowArms:1b,Tags:["wp_arms"]}
+execute as @e[type=minecraft:armor_stand,name="arms",tag=wp_arms,nbt={OnGround:1b}] at @s unless entity @e[type=minecraft:area_effect_cloud,tag=wp_arms_cloud,distance=...1] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2147483647,Tags:["wp_arms_cloud"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=wp_arms_cloud] at @s unless entity @e[type=minecraft:armor_stand,name="arms",tag=wp_arms,distance=...1,nbt={OnGround:1b}] unless entity @e[type=minecraft:armor_stand,name="arms",tag=wp_arms,distance=...5,nbt={OnGround:0b}] run summon item ~ ~ ~ {Item:{id:"minecraft:name_tag",Count:1b,tag:{display:{Name:'{"text":"arms"}'}}},Motion:[0d,0.3d,0d]}
+execute as @e[type=minecraft:area_effect_cloud,tag=wp_arms_cloud] at @s unless entity @e[type=minecraft:armor_stand,name="arms",tag=wp_arms,distance=...1,nbt={OnGround:1b}] run kill @s

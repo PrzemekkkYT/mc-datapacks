@@ -1,0 +1,67 @@
+{
+    "parent": "whitepack:main/ocean/yellow_submarine",
+    "display": {
+        "title": {
+            "text": "Nie wyglądasz na łódź podwodną"
+        },
+        "description": {
+            "text": "Utop się w oceanie"
+        },
+        "icon": {
+            "item": "minecraft:seagrass"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "drown": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "drowned_deaths": {
+                                "min": 1
+                            },
+                            "lungs_time": {
+                                "max": 1
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "whitepack:ocean"
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:water"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetY": 1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:water"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "whitepack:advancements/reset/reset_drowned_deaths"
+    }
+}

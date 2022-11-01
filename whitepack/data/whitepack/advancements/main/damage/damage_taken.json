@@ -1,0 +1,47 @@
+{
+    "parent": "whitepack:main/damage/multi_kill",
+    "display": {
+        "title": {
+            "text": "Stoi szybciej niż oni biegają"
+        },
+        "description": {
+            "text": "Otrzymaj łącznie 300 obrażeń w 10 sekund"
+        },
+        "icon": {
+            "item": "minecraft:shield"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "damage_taken": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "damage_taken": {
+                                "min": 300
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{DeathTime:0s}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "whitepack:advancements/reset/reset_damage_taken",
+        "experience": 100
+    }
+}

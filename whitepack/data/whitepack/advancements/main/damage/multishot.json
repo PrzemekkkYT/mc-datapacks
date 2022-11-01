@@ -1,0 +1,83 @@
+{
+    "parent": "whitepack:main/damage/multi_kill",
+    "display": {
+        "title": {
+            "text": "Multishot"
+        },
+        "description": {
+            "text": "Zabij 3 moby strzałami z kuszy z wielostrzałem"
+        },
+        "icon": {
+            "item": "minecraft:crossbow"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "crossbow_mainhand": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "multi_kill": {
+                                "min": 3
+                            }
+                        }
+                    }
+                ],
+                "killing_blow": {
+                    "is_projectile": true,
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "items": [
+                                    "minecraft:crossbow"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "crossbow_offhand": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "multi_kill": {
+                                "min": 3
+                            }
+                        }
+                    }
+                ],
+                "killing_blow": {
+                    "is_projectile": true,
+                    "source_entity": {
+                        "equipment": {
+                            "offhand": {
+                                "items": [
+                                    "minecraft:crossbow"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["crossbow_mainhand", "crossbow_offhand"]
+    ],
+    "rewards": {
+        "function": "whitepack:advancements/reset/reset_multi_kill",
+        "experience": 60
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "parent": "whitepack:root",
+    "display": {
+        "title": {
+            "text": "Złapany"
+        },
+        "description": {
+            "text": "Daj się złapać i zgiń od klasycznej pułapki z drzwi"
+        },
+        "icon": {
+            "item": "minecraft:iron_door"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trapped": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "tag": "minecraft:pressure_plates"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetY": 2,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:obsidian"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetY": 1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:water"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetZ": 1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:iron_door"
+                                ],
+                                "state": {
+                                    "facing": "west"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetZ": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:iron_door"
+                                ],
+                                "state": {
+                                    "facing": "west"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetX": 1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:iron_door"
+                                ],
+                                "state": {
+                                    "facing": "north"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetX": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:iron_door"
+                                ],
+                                "state": {
+                                    "facing": "north"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "drowned_deaths": {
+                                "min": 1
+                            },
+                            "lungs_time": {
+                                "max": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "whitepack:advancements/reset/reset_drowned_deaths"
+    }
+}

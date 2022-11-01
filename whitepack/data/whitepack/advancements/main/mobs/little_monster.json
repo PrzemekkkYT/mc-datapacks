@@ -1,0 +1,29 @@
+{
+    "parent": "whitepack:main/mobs/arifureta",
+    "display": {
+        "title": {
+            "text": "Mały powtór"
+        },
+        "description": {
+            "text": "Zostań zabitym przez małego zombie"
+        },
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "elytra": {
+            "trigger" : "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "nbt": "{IsBaby:1b}"
+                }
+            }
+        }
+    }
+}

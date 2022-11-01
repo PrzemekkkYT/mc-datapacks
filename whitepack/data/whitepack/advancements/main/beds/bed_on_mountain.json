@@ -1,0 +1,250 @@
+{
+    "parent": "whitepack:root",
+    "display": {
+        "title": {
+            "text": "Dom w górach"
+        },
+        "description": {
+            "text": "Postaw łóżko na wysokości conajmniej 240 bloków"
+        },
+        "icon": {
+            "item": "minecraft:red_bed"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "black_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:black_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "white_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:white_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "yellow_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:yellow_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "red_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:red_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "purple_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:purple_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "pink_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:pink_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "orange_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:orange_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "magenta_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:magenta_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "lime_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:lime_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "light_gray_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:light_gray_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "light_blue_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:light_blue_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "green_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:green_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "gray_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:gray_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "cyan_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:cyan_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "brown_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:brown_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        },
+        "blue_bed": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:blue_bed",
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 240
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["yellow_bed",
+        "white_bed",
+        "red_bed",
+        "purple_bed",
+        "pink_bed",
+        "orange_bed",
+        "magenta_bed",
+        "lime_bed",
+        "light_gray_bed",
+        "light_blue_bed",
+        "green_bed",
+        "gray_bed",
+        "cyan_bed",
+        "brown_bed",
+        "blue_bed",
+        "black_bed"
+        ]
+    ],
+    "rewards": {
+      "experience": 50
+    }
+}

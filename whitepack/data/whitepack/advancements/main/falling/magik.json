@@ -1,0 +1,48 @@
+{
+    "parent": "whitepack:main/falling/failed_bucket",
+    "display": {
+        "title": {
+            "text": "Magik"
+        },
+        "description": {
+            "text": "Skocz z wysokości 9 piętra (27-30 metrów) i zgiń"
+        },
+        "icon": {
+            "item": "minecraft:leather_boots"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "fall": {
+          "trigger": "minecraft:tick",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "fall_damage_dead": {
+                    "min": 1
+                  },
+                  "fall_damage_distance_fallen": {
+                    "min": 2650,
+                    "max": 3000
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [
+        [
+          "fall"
+        ]
+      ],
+      "rewards": {
+        "function": "whitepack:advancements/reset/reset_fall_damage"
+      }
+}

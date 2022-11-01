@@ -1,0 +1,71 @@
+{
+    "parent": "whitepack:main/location/sigma_coords",
+    "display": {
+        "title": {
+            "text": "Papaj nie zostanie zapomniany!"
+        },
+        "description": {
+            "text": "Stań w miejscu w którym dowolny z koordynatów jest równy 2137"
+        },
+        "icon": {
+            "item": "minecraft:beacon"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "x": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 2137,
+                                "max": 2138
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "y": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "y": {
+                                "min": 2137,
+                                "max": 2138
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "z": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "z": {
+                                "min": 2137,
+                                "max": 2138
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["x", "y", "z"]
+    ],
+    "rewards": {
+        "experience": 2137
+    }
+}

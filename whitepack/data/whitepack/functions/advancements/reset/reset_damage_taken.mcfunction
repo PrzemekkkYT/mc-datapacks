@@ -1,0 +1,1 @@
+scoreboard players set @s damage_taken 0

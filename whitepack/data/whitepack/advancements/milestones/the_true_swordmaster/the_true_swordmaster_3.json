@@ -1,0 +1,39 @@
+{
+    "parent": "whitepack:milestones/the_true_swordmaster/the_true_swordmaster_2",
+    "display": {
+        "title": {
+            "text": "The True Swordmaster 3"
+        },
+        "description": {
+            "text": "Zabij łącznie 50000 mobów"
+        },
+        "icon": {
+            "item": "minecraft:netherite_sword"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "mob_kills": {
+                                "min": 50000
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+      "experience": 600
+    }
+}

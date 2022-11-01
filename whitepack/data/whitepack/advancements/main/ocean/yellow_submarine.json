@@ -1,0 +1,39 @@
+{
+    "parent": "whitepack:root",
+    "display": {
+        "title": {
+            "text": "Yellow submarine"
+        },
+        "description": {
+            "text": "płyń conajmniej 5 minut pod wodą w oceanie"
+        },
+        "icon": {
+            "item": "minecraft:turtle_helmet"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "score": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "submarine_time": {
+                                "min": 6000
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 200
+    }
+}

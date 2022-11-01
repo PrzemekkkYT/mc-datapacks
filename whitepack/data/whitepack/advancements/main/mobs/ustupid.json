@@ -1,0 +1,53 @@
+{
+    "parent": "whitepack:main/mobs/little_monster",
+    "display": {
+        "title": {
+            "text": "Dawid i Goliat"
+        },
+        "description": {
+            "text": "Zostań zabitym przez małego zombie mając na sobie zbroję z netherytu"
+        },
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "elytra": {
+            "trigger" : "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "head": {
+                            "items": [
+                                "minecraft:netherite_helmet"
+                            ]
+                        },
+                        "chest": {
+                            "items": [
+                                "minecraft:netherite_chestplate"
+                            ]
+                        },
+                        "legs": {
+                            "items": [
+                                "minecraft:netherite_leggings"
+                            ]
+                        },
+                        "feet": {
+                            "items": [
+                                "minecraft:netherite_boots"
+                            ]
+                        }
+                    }
+                },
+                "entity": {
+                    "type": "minecraft:zombie",
+                    "nbt": "{IsBaby:1b}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "parent": "whitepack:milestones/tarzan/tarzan",
+    "display": {
+        "title": {
+            "text": "Tarzan 2"
+        },
+        "description": {
+            "text": "Przejdź łącznie 5 kilometrów po liściach"
+        },
+        "icon": {
+            "item": "minecraft:spruce_leaves"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "tarzan": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "leaves": {
+                                "min": 500000
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+      "experience": 200
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "parent": "whitepack:root",
+    "display": {
+        "title": {
+            "text": "Arifureta"
+        },
+        "description": {
+            "text": "Zjedz coś, co mogło zjeść ciebie"
+        },
+        "icon": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "rotten_flesh": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rotten_flesh"
+                    ]
+                }
+            }
+        },
+        "spider_eye": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:spider_eye"
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        ["rotten_flesh", "spider_eye"]
+    ],
+    "rewards": {
+      "experience": 20
+    }
+}

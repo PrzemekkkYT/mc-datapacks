@@ -1,19 +1,19 @@
 {
     "display": {
         "title": {
-            "text": "Whitepack"
+            "text": "Kamienie milowe"
         },
         "description": {
             "text": ""
         },
         "icon": {
-            "item": "minecraft:axolotl_bucket"
+            "item": "minecraft:leather_boots"
         },
         "frame": "task",
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/oxidized_copper.png"
+        "background": "minecraft:textures/block/amethyst_block.png"
     },
     "criteria": {
         "debilizm": {

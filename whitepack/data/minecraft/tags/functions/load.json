@@ -1,5 +1,5 @@
 {
     "values": [
-        "whitepack:init"
+        "whitepack:inits/init"
     ]
 }

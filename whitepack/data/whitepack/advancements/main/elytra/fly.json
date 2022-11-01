@@ -1,0 +1,32 @@
+{
+    "parent": "whitepack:main/falling/false_wings",
+    "display": {
+        "title": {
+            "text": "Jak mucha"
+        },
+        "description": {
+            "text": "Wleć elytrą w szybę"
+        },
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "elytra": {
+            "trigger" : "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:glass_pane",
+                "player": {
+                    "nbt": "{FallFlying:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+      "experience": 30
+    }
+}

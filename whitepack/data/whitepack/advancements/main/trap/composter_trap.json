@@ -1,0 +1,63 @@
+{
+    "parent": "whitepack:main/trap/door_trap",
+    "display": {
+        "title": {
+            "text": "Zakompostowany"
+        },
+        "description": {
+            "text": "Wejdź do kompostownika i zamknij klapę nad głową"
+        },
+        "icon": {
+            "item": "minecraft:composter"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "composter_trap": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                        "block": {
+                            "blocks": [
+                            "minecraft:composter"
+                            ]
+                        }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetY": 1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:acacia_trapdoor",
+                                    "minecraft:birch_trapdoor",
+                                    "minecraft:dark_oak_trapdoor",
+                                    "minecraft:jungle_trapdoor",
+                                    "minecraft:oak_trapdoor",
+                                    "minecraft:spruce_trapdoor",
+                                    "minecraft:crimson_trapdoor",
+                                    "minecraft:warped_trapdoor",
+                                    "minecraft:mangrove_trapdoor",
+                                    "minecraft:iron_trapdoor"
+                                ],
+                                "state": {
+                                "open": false
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+      "experience": 20
+    }
+}
