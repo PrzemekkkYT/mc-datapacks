@@ -9,6 +9,9 @@ scoreboard objectives remove mstime
 # arrows count while holding bow
 scoreboard objectives remove arrows_count
 
+# connect xp orbs
+scoreboard objectives remove orb_value
+
 # metric values to convert cm to m and km
 scoreboard objectives remove metric
 

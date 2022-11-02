@@ -7,6 +7,9 @@ scoreboard players set slp mstime 0
 # arrows count while holding bow
 scoreboard objectives add arrows_count dummy
 
+# connect xp orbs
+scoreboard objectives add orb_value dummy
+
 #advancement - main - init
 function whitepack:inits/advancements/init_whitepack
 

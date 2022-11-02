@@ -1,7 +1,0 @@
-execute as @e[type=minecraft:experience_orb,sort=random,limit=1,tag=!finish_orb] at @s unless entity @e[type=minecraft:area_effect_cloud,distance=..5] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:2147483647,Tags:['xp_orb']}
-execute as @e[type=experience_orb,tag=!finish_orb] at @s unless entity @s[scores={orb_value=-2147483648..2147483647}] store result score @s orb_value run data get entity @s Value 1
-execute as @e[type=minecraft:area_effect_cloud,tag=xp_orb] at @s if entity @e[type=experience_orb,distance=.01..5,sort=arbitrary,tag=!finish_orb] store result score @s orb_value run scoreboard players operation @s orb_value += @e[type=experience_orb,distance=.01..5,sort=arbitrary,tag=!finish_orb] orb_value
-execute as @e[type=minecraft:area_effect_cloud,tag=xp_orb] at @s if entity @e[type=experience_orb,distance=.01..5,sort=arbitrary,tag=!finish_orb] run kill @e[type=experience_orb,distance=.01..5,sort=arbitrary,tag=!finish_orb]
-execute as @e[type=area_effect_cloud,tag=xp_orb] at @s unless entity @e[type=experience_orb,distance=..5,tag=!finish_orb] run summon minecraft:experience_orb ~ ~ ~ {Tags:['finish_orb']}
-execute as @e[type=experience_orb,tag=finish_orb] at @s if entity @e[type=area_effect_cloud,distance=..5,tag=xp_orb,sort=nearest,limit=1] store result entity @s Value short 1 run scoreboard players get @e[type=area_effect_cloud,distance=..5,tag=xp_orb,sort=nearest,limit=1] orb_value
-execute as @e[type=experience_orb,tag=finish_orb] at @s run kill @e[type=area_effect_cloud,distance=..5,tag=xp_orb,sort=nearest,limit=1]
