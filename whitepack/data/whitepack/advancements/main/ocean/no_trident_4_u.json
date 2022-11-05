@@ -1,5 +1,5 @@
 {
-    "parent": "whitepack:yellow_submarine",
+    "parent": "whitepack:main/ocean/yellow_submarine",
     "display": {
         "title": {
             "text": "Potrójny pech"

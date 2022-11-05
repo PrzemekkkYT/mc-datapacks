@@ -6,11 +6,12 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:logs"
+            "item": "minecraft:polished_blackstone_slab"
         }
     },
     "result": {
-        "item": "minecraft:stick",
-        "count": 16
-    }
+        "item": "minecraft:polished_blackstone",
+        "count": 1
+    },
+    "group": "slabs"
 }

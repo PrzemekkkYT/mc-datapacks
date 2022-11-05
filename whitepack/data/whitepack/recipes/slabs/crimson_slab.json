@@ -6,11 +6,12 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:logs"
+            "item": "minecraft:crimson_slab"
         }
     },
     "result": {
-        "item": "minecraft:stick",
-        "count": 16
-    }
+        "item": "minecraft:crimson_planks",
+        "count": 1
+    },
+    "group": "slabs"
 }

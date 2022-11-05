@@ -6,11 +6,12 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:logs"
+            "item": "minecraft:waxed_cut_copper_slab"
         }
     },
     "result": {
-        "item": "minecraft:stick",
-        "count": 16
-    }
+        "item": "minecraft:waxed_cut_copper",
+        "count": 1
+    },
+    "group": "slabs"
 }

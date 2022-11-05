@@ -6,7 +6,6 @@ function whitepack:xp/connect_xp_orbs
 
 execute as @a at @s run function whitepack:advancements/reset/reset_fall_damage
 execute as @a at @s run function whitepack:advancements/reset/reset_multi_kill
-function whitepack:advancements/reset/reset_mlg_bucket
 
 #reset funkcji
 schedule function whitepack:loops/main_1s 1s

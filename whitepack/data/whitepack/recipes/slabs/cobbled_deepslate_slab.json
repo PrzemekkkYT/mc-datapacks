@@ -6,11 +6,12 @@
     ],
     "key": {
         "#": {
-            "tag": "minecraft:logs"
+            "item": "minecraft:cobbled_deepslate_slab"
         }
     },
     "result": {
-        "item": "minecraft:stick",
-        "count": 16
-    }
+        "item": "minecraft:cobbled_deepslate",
+        "count": 1
+    },
+    "group": "slabs"
 }

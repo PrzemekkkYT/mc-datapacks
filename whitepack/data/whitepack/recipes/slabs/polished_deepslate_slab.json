@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:nether_brick_slab"
+            "item": "minecraft:polished_deepslate_slab"
         }
     },
     "result": {
-        "item": "minecraft:nether_bricks",
+        "item": "minecraft:polished_deepslate",
         "count": 1
     },
     "group": "slabs"
