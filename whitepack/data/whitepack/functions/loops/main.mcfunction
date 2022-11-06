@@ -21,12 +21,8 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}},y_rotation=45..135] at
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}},y_rotation=135..-135] at @s run title @s actionbar {"text":"kierunek: północ"}
 execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}},y_rotation=-135..-45] at @s run title @s actionbar {"text":"kierunek: wschód"}
 
-# minecarts separator
-execute as @e[type=item,nbt={Item:{id:"minecraft:chest_minecart",Count:1b}}] at @s if block ~ ~ ~ minecraft:stonecutter run function whitepack:minecarts/chest_minecart
-execute as @e[type=item,nbt={Item:{id:"minecraft:furnace_minecart",Count:1b}}] at @s if block ~ ~ ~ minecraft:stonecutter run function whitepack:minecarts/furnace_minecart
-execute as @e[type=item,nbt={Item:{id:"minecraft:hopper_minecart",Count:1b}}] at @s if block ~ ~ ~ minecraft:stonecutter run function whitepack:minecarts/hopper_minecart
-execute as @e[type=item,nbt={Item:{id:"minecraft:tnt_minecart",Count:1b}}] at @s if block ~ ~ ~ minecraft:stonecutter run function whitepack:minecarts/tnt_minecart
-
+# minecarts and boats separator
+function whitepack:separate/separator
 
 #advancement - no_trident_4_u
 execute as @a[nbt={Inventory:[{id:"minecraft:trident"}]}] at @s run scoreboard players set @s drowned_killed 0

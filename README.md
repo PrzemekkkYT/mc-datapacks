@@ -11,13 +11,13 @@ Features:
   
  # whitepack
  Basicly better version of coronapack with more features
- Features:
   1. 44 new advancements. (As for now only in polish, but I'll translate them sooner or later)<br/>
     - 23 basic<br/>
     - 21 milestones (very long)<br/>
     - use "/trigger progress" to check progress of some advancements.
   2. New craftings<br/>
     - Dropping minecarts (with chest, furnace, hopper or tnt) on Stone Cutter splits them into minecart and corresponding item<br/>
+    - Dropping boats with chest on Stone Cutter splits them into boat and chest<br/>
     - You can now cut planks using Stone Cutter.<br/>
     - Slabs can be crafted back into original block<br/>
     - Craft 4 chest using wood instead 1 with of planks<br/>
